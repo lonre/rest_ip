@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Lonre Wang']
   spec.email         = ['me@wanglong.me']
   spec.summary       = %q{Query IP address location based on various online restful services.}
-  spec.description   = %q{Query IP address location based on various online restful services. Such as ip.taobao.com... }
+  spec.description   = %q{Query IP address location based on various online restful services. Such as ip.taobao.com, sina iplookup... }
   spec.homepage      = 'https://github.com/lonre/rest_ip'
   spec.license       = 'MIT'
 
@@ -18,6 +18,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'bundler', "~> 1.6"
+  spec.add_dependency 'json', '~> 1.8'
+  spec.add_dependency 'faraday', '~> 0.9'
+  spec.add_development_dependency 'bundler', '~> 1.6'
   spec.add_development_dependency 'rake'
 end

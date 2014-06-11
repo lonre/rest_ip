@@ -1,5 +1,10 @@
-require "rest_ip/version"
+require 'rest_ip/querying'
+require 'rest_ip/rest_adapter'
+require 'rest_ip/result'
+require 'rest_ip/version'
 
 module RestIP
-  # Your code goes here...
+  extend RestAdapter
+
+  extend Querying
 end
