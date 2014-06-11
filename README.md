@@ -1,4 +1,4 @@
-# RestIp [![Build Status](https://travis-ci.org/lonre/rest_ip.png?branch=master)](https://travis-ci.org/lonre/rest_ip)
+# RestIP [![Build Status](https://travis-ci.org/lonre/rest_ip.png?branch=master)](https://travis-ci.org/lonre/rest_ip)
 
 Query IP address location based on various online restful services.
 
