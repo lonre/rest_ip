@@ -1,6 +1,6 @@
-# RestIp
+# RestIp [![Build Status](https://travis-ci.org/lonre/rest_ip.png?branch=master)](https://travis-ci.org/lonre/rest_ip)
 
-TODO: Write a gem description
+Query IP address location based on various online restful services.
 
 ## Installation
 
@@ -18,7 +18,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+1. Config with:
+
+    ```ruby
+    # available adapters :taobao, :sina
+    RestIP.rest_adapter = :taobao
+    ```
+2. Use as below:
+
+    ```ruby
+    # RestIP::Result
+    result = RestIP.query('114.114.114.114')
+    result.country  # 中国
+    result.region   # 江苏省
+    result.city     # 南京市
+    ```
 
 ## Contributing
 
